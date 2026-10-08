@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Petrohome Energy | Trusted Solutions for Global Oil Markets</title>
+<style>
+:root{--navy:#16233F;--or:#E8833A;--bg:#fff;--alt:#F3F4F6;--fg:#1F2937;--mut:#5b6472;--card:#fff;--line:#e5e7eb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--alt:#131c30;--fg:#e5e7eb;--mut:#9aa4b5;--card:#1a2440;--line:#2a3552}}
+:root[data-theme="dark"]{--bg:#0f1626;--alt:#131c30;--fg:#e5e7eb;--mut:#9aa4b5;--card:#1a2440;--line:#2a3552}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+button{font:inherit;cursor:pointer}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+nav{position:fixed;top:0;left:0;right:0;z-index:9;background:var(--navy);padding:calc(10px + env(safe-area-inset-top,0px)) 0 10px;box-shadow:0 2px 12px #0004}
+nav .w{display:flex;justify-content:space-between;align-items:center}
+.logo{color:#fff;font-weight:800;font-size:22px;background:none;border:0;letter-spacing:-.5px}
+.logo b{color:var(--or)}.logo span{font-weight:300}
+.links{display:flex;gap:20px;align-items:center}
+.links button{background:none;border:0;color:#cbd2de;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.links button:hover,.links button.on{color:var(--or)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px}
+.btn{display:inline-block;border:2px solid var(--or);background:var(--or);color:#fff;padding:12px 24px;border-radius:6px;font-weight:700;transition:.2s}
+.btn:hover{filter:brightness(.92)}
+.btn.o{background:none;border-color:#fff}.btn.o:hover{background:#fff;color:var(--navy)}
+.btn.s{background:none;color:var(--fg);border-color:var(--fg)}
+.btn.sm{padding:8px 14px;font-size:13px}
+.hero{background:var(--navy);color:#fff;padding:150px 0 100px;min-height:90vh;display:flex;align-items:center;background-image:radial-gradient(circle at 80% 20%,#ffffff14,transparent 50%)}
+.pill{display:inline-block;padding:4px 14px;border-radius:99px;background:#E8833A2e;color:var(--or);font-size:13px;font-weight:600;border:1px solid #E8833A55}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.1;margin:18px 0;font-weight:800}
+h1 em{color:var(--or);font-style:normal}
+.hero p{font-size:19px;color:#cbd2de;max-width:560px}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));text-align:center;padding:40px 0;border-bottom:1px solid var(--line)}
+.stats b{display:block;font-size:36px;color:var(--fg)}.stats span{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+section{padding:80px 0}.alt{background:var(--alt)}
+.sh small{display:block;color:var(--or);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:13px}
+.sh h2{font-size:clamp(28px,4.5vw,44px);margin:6px 0 0;font-weight:800;line-height:1.2}
+.sh:after{content:"";display:block;width:70px;height:4px;background:var(--or);margin:20px 0 40px}
+.sh.c{text-align:center}.sh.c:after{margin:20px auto 40px}
+.page{padding-top:76px;animation:f .5s ease-out}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+.ph{background:var(--navy);color:#fff;padding:60px 0 20px}
+.ph p{color:#cbd2de;max-width:640px;font-size:18px;margin:-20px 0 30px}
+.g{display:grid;gap:24px}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;transition:.25s}
+.card.h{cursor:pointer;text-align:left;color:inherit;font:inherit;width:100%}
+.card.h:hover{transform:translateY(-4px);box-shadow:0 12px 30px #0002;border-color:var(--or)}
+.ic{width:56px;height:56px;border-radius:50%;background:#E8833A22;color:var(--or);display:grid;place-items:center;font-size:26px;margin-bottom:16px}
+.card h3{margin:0 0 8px;font-size:22px}.card p{color:var(--mut);margin:0}
+.tag{display:inline-block;background:var(--alt);font-size:12px;font-weight:600;padding:2px 8px;border-radius:4px;margin:12px 6px 0 0}
+.t{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
+.cta{background:var(--navy);color:#fff;text-align:center;padding:70px 0}.cta h2{font-size:34px;margin:0 0 12px}.cta p{color:#cbd2de;margin:0 0 24px}
+table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+td{padding:14px 18px;border-bottom:1px solid var(--line)}tr:nth-child(odd) td{background:var(--alt)}td:first-child{font-weight:600;width:38%}
+.sc{overflow-x:auto}
+.note{background:#3b82f61a;border:1px solid #3b82f640;border-radius:8px;padding:16px;margin-top:20px;font-size:14px}
+.side{position:sticky;top:100px;background:var(--alt);border:1px solid var(--line);border-radius:12px;padding:26px}
+.back{background:none;border:0;color:#cbd2de;margin-bottom:16px;padding:0}
+.stp{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:40px}
+.stp .l button{display:block;width:100%;text-align:left;background:none;border:0;border-left:3px solid var(--line);padding:16px 18px;color:var(--mut);font-weight:700;font-size:16px}
+.stp .l button.on{border-color:var(--or);color:var(--fg)}.stp .l button.d{border-color:var(--navy);color:var(--fg)}
+.stp .r{background:var(--alt);border:1px solid var(--line);border-radius:16px;padding:36px;min-height:320px}
+.stp .r h3{font-size:32px;margin:12px 0}.stp .r p{font-size:20px;color:var(--mut)}
+.person{padding:0;overflow:hidden}.person .top{background:var(--navy);color:#fff;padding:50px 20px 20px;text-align:center}.person .top h3{margin:0}.person .top span{color:var(--or);font-weight:600}.person p{padding:22px;text-align:center}
+label{display:block;font-weight:600;font-size:14px;margin:0 0 6px}
+input,select,textarea{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--or);border-color:var(--or)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.fr.one{grid-template-columns:1fr}
+.msg{padding:12px 16px;border-radius:6px;margin-bottom:16px}.msg.e{background:#ef44441f;color:#ef4444}.msg.k{background:#22c55e1f;color:#16a34a}
+.ci{display:flex;gap:16px;margin-bottom:24px}.ci i{flex:none;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-style:normal}
+footer{background:#0a1120;color:#9aa4b5;padding:56px 0 24px;font-size:14px}
+footer .g{grid-template-columns:2fr 1fr 1fr}footer h4{color:#fff;text-transform:uppercase;letter-spacing:.08em;margin:0 0 14px}
+footer button{background:none;border:0;color:inherit;padding:4px 0;display:block}footer button:hover{color:#fff}
+.cp{border-top:1px solid #1f2a44;margin-top:30px;padding-top:20px}
+@media(max-width:900px){.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;align-items:flex-start;padding:16px 20px;gap:14px}.links.open{display:flex}.burger{display:block}.stp{grid-template-columns:1fr}.fr{grid-template-columns:1fr}footer .g{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="w"><button class="logo" onclick="go('home')"><b>&#9679;</b> PETROHOME<span>ENERGY</span></button><div class="links" id="links"></div><button class="burger" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Menu">&#9776;</button></div></nav>
+<main id="app"></main>
+<footer><div class="w"><div class="g"><div><div class="logo" style="margin-bottom:12px"><b>&#9679;</b> PETROHOME<span>ENERGY</span></div><p id="fdesc"></p></div><div><h4>Quick Links</h4><div id="fl"></div></div><div><h4>Contact</h4><div id="fc"></div></div></div><div class="cp">&copy; <span id="yr"></span> Petrohome Energy. All rights reserved.</div></div></footer>
+
+<script>
+const C={name:'Petrohome Energy',tag:'Trusted Solutions for Global Oil Markets',desc:"Bridging global refining capacity and Africa's energy demand with secured allocations and integrated logistics.",hq:'Lagos, Nigeria',exp:'Dubai, UAE',phone:'+971 56 670 9783',email:'commercial@petrohomeenergy.com'};
+const P=[
+['crude','Crude Oil','Light & Heavy','Sourced from strategic global partners.',['API Gravity: 30-40','Sulfur: <0.5%'],['FOB','CIF']],
+['jeta1','Jet Fuel A-1','Aviation','Premium aviation fuel meeting international standards.',['Flash Point: 38°C min','Freezing Point: -47°C max'],['FOB','CIF','DAP']],
+['jp54','Jet Fuel JP54','Aviation','Aviation kerosene colonial grade 54.',['Density: 0.775-0.840','Sulfur: 0.05% max'],['FOB']],
+['en590','Diesel EN590 10PPM','Middle Distillate','Ultra-low sulfur diesel for modern engines.',['Sulfur: 10ppm max','Cetane Index: 46 min'],['FOB','CIF']],
+['ago','AGO / Gasoil D2','GOST 305-82','Automotive Gas Oil for heavy-duty applications.',['Sulfur: 0.2% max','Flash Point: 62°C min'],['FOB','CIF']],
+['d6','Virgin Fuel Oil D6','Heavy Fuel','Residual fuel oil for power generation and marine use.',['Viscosity: High','Sulfur: Varies'],['FOB']],
+['bitumen','Bitumen','All Grades','High-quality asphalt for road construction.',['Penetration Grades: 60/70, 80/100','Softening Point: Varies'],['FOB','CIF']],
+['lpg','LPG','Liquefied Gas','Liquefied Petroleum Gas for domestic and industrial use.',['Composition: Propane/Butane mix','Calorific Value: High'],['FOB','CIF']],
+['lng','LNG','Liquefied Gas','Liquefied Natural Gas for cleaner power generation.',['Methane: >90%','Gross Heating Value: High'],['FOB','CIF']],
+['urea','Urea 46%','Petrochemical','High-nitrogen fertilizer for agricultural applications.',['Nitrogen: 46% min','Biuret: 1% max'],['FOB','CIF']]
+].map(a=>({id:a[0],name:a[1],type:a[2],desc:a[3],specs:a[4],terms:a[5]}));
+const L=[['Chuks King','Founder & Managing Director','Over 20 years in global energy trading and strategic market entry.'],['Dennis Ochala','Chief Financial Officer','Expert in trade finance structuring and risk management for volatile markets.'],['Edward Boroko','Head of Trading','Leading the securing of refinery allocations and managing complex supply chains.']];
+const S=[['Commercial Alignment','Confirming product, volume, destination port, and delivery basis (FOB/CIF).'],['Corporate & Compliance Exchange','Rigorous KYC verification and regulatory compliance checks.'],['Commercial Proposal','Issuance of formal indicative terms and pricing structures.'],['Financial Structuring & Contracting','Setting up bankable instruments (LCs/SBLCs) and executing the SPA.'],['Execution & Delivery','Overseeing loading, independent Q&Q inspection, shipment, and final delivery.']];
+const PI=[['&#128737;','Secured Sourcing','Allocation-based procurement from tier-1 refineries with full Q&Q certification.'],['&#9875;','Integrated Logistics','End-to-end management of inspection, chartering, and maritime insurance.'],['&#128200;','Market Delivery','Serving licensed importers, NOCs, and bulk industrial consumers reliably.']];
+const NAV=[['home','Home'],['about','About'],['products','Products'],['operations','Operations'],['expertise','Expertise'],['leadership','Leadership'],['partners','Partners'],['contact','Contact']];
+
+const $=s=>document.querySelector(s);
+const sh=(t,s,c)=>`<div class="sh ${c?'c':''}">${s?`<small>${s}</small>`:''}<h2>${t}</h2></div>`;
+const hdr=(t,s,p)=>`<div class="ph"><div class="w">${sh(t,s)}${p?`<p>${p}</p>`:''}</div></div>`;
+const cta=`<div class="cta"><div class="w"><h2>Ready to Secure Your Energy Supply?</h2><p>Initiate a formal engagement process with our trading desk today.</p><button class="btn" onclick="go('partners')">Start an Engagement &rarr;</button></div></div>`;
+const pil=PI.map(p=>`<div class="card"><div class="ic">${p[0]}</div><h3>${p[1]}</h3><p>${p[2]}</p></div>`).join('');
+
+let step=0,flash=null,pre='';
+const pages={
+home:()=>`<div class="hero"><div class="w"><span class="pill">Downstream Petroleum Trading</span><h1>Trusted Solutions for <em>Global Oil Markets</em></h1><p>Connecting refineries and title holders with bulk off-takers across Africa, the Middle East, and Europe through secured allocations.</p><div class="row"><button class="btn" onclick="go('partners')">Start an Engagement</button><button class="btn o" onclick="go('products')">Explore Products</button></div></div></div>
+<div class="w stats"><div><b>30+</b><span>Years Experience</span></div><div><b>3</b><span>Core Regions</span></div><div><b>10+</b><span>Product Categories</span></div><div><b>Tier-1</b><span>Refinery Partners</span></div></div>
+<section class="alt"><div class="w">${sh('Built on Experience, Not Experimentation','Our Operating Model',1)}<div class="g g3">${pil}</div></div></section>${cta}`,
+about:()=>`${hdr('Our Story','About Petrohome Energy')}<section><div class="w g g2"><div><h3 style="font-size:28px;margin-top:0">Bridging Global Refining Capacity and Africa's Energy Demand</h3><p>Petrohome Energy was established with a singular focus: to create reliable, secured pathways for downstream petroleum products into high-growth markets. We do not rely on volatile spot markets. Instead, we operate on secured refinery allocations.</p><p>By integrating sourcing, stringent Q&amp;Q certification, and complex maritime logistics, we de-risk the supply chain for National Oil Companies, licensed importers, and bulk industrial consumers across our core regions.</p><div class="g g2" style="border-top:1px solid var(--line);padding-top:20px"><div><b>Headquarters</b><br>${C.hq}</div><div><b>Strategic Expansion</b><br>${C.exp}</div></div></div><div class="card" style="display:grid;place-items:center;min-height:300px;color:var(--mut)">[Corporate / logistics image]</div></div></section>`,
+products:()=>`${hdr('Our Product Portfolio','Commodities','Sourced globally through secured allocations, delivered reliably.')}<section><div class="w g g3">${P.map(p=>`<button class="card h" onclick="go('product/${p.id}')"><span class="t">${p.type}</span><h3 style="margin-top:6px">${p.name} &rsaquo;</h3><p>${p.desc}</p>${p.terms.map(t=>`<span class="tag">${t}</span>`).join('')}</button>`).join('')}</div></section>`,
+product:id=>{const p=P.find(x=>x.id===id);if(!p)return`<section class="w">Product not found.</section>`;
+return`<div class="ph"><div class="w"><button class="back" onclick="go('products')">&lsaquo; Back to Products</button>${sh(p.name,p.type)}<button class="btn" style="margin-bottom:30px" onclick="pre='${p.name}';go('contact')">Request a Quote</button></div></div>
+<section><div class="w g" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"><div style="grid-column:span 2;min-width:0"><h3 style="font-size:24px;margin-top:0">Product Overview</h3><p style="font-size:18px">${p.desc}</p><div class="note"><b>Documentation &amp; Q&amp;Q:</b> Product passports and independent Quality &amp; Quantity certifications (e.g. SGS, Saybolt, Intertek) are provided before loading and on discharge.</div><h3 style="font-size:24px;margin-top:36px">Key Specifications</h3><div class="sc"><table>${p.specs.map(s=>{const i=s.indexOf(':');return i<0?`<tr><td colspan="2">${s}</td></tr>`:`<tr><td>${s.slice(0,i)}</td><td>${s.slice(i+1)}</td></tr>`}).join('')}</table></div></div>
+<div><div class="side"><h3 style="margin-top:0">Supply &amp; Delivery Terms</h3>${p.terms.map(t=>`<p><b style="color:var(--or)">&#9875;</b> <b>${t}</b> delivery available</p>`).join('')}<p style="font-size:13px;color:var(--mut)">Minimum order quantities apply based on vessel charter requirements and port constraints.</p><button class="btn s" style="width:100%" onclick="pre='${p.name}';go('contact')">Contact Trading Desk</button></div></div></div></section>`},
+operations:()=>`${hdr('How We Operate','The 3-Pillar Model')}<section><div class="w g g3">${pil}</div></section>`,
+expertise:()=>{const r=(t,d,h)=>`<div class="card"><h3 style="font-size:28px">${t}</h3><p style="margin-bottom:20px">${d}</p><span class="t">Key Delivery Hubs</span><br>${h.map(x=>`<span class="tag" style="background:var(--navy);color:#fff">${x}</span>`).join('')}</div>`;
+return`${hdr('Regional Expertise','Our Footprint','We navigate the regulatory, logistical, and financial landscapes of high-growth African markets.')}<section><div class="w g g2">${r('West Africa','Serving a market of 400M+ people with significant import dependencies, with deep expertise in the BDC and OMC landscapes, particularly in Nigeria and Ghana.',['Lagos','Tema','Abidjan','Dakar'])}${r('Southern & East Africa','Addressing coastal and landlocked demand driven by mining, transport, and industrial expansion.',['Dar es Salaam','Beira','Walvis Bay','Durban','Maputo'])}</div></section>`},
+leadership:()=>`${hdr('Leadership','Executive Team')}<section class="alt"><div class="w g g3">${L.map(m=>`<div class="card person"><div class="top"><h3>${m[0]}</h3><span>${m[1]}</span></div><p>${m[2]}</p></div>`).join('')}</div></section>`,
+partners:()=>`${hdr('Partner With Us','Engagement Process','A structured, rigorous process ensures transparency, compliance, and successful execution.')}<section><div class="w stp"><div class="l">${S.map((s,i)=>`<button class="${i===step?'on':i<step?'d':''}" onclick="step=${i};render()">${i<step?'&#10003;':i+1}. ${s[0]}</button>`).join('')}</div><div class="r"><span class="pill">Phase ${step+1}</span><h3>${S[step][0]}</h3><p>${S[step][1]}</p>${step===S.length-1?`<button class="btn" onclick="go('contact')">Begin Process Now</button>`:`<button class="btn s" onclick="step++;render()">Next Phase &rarr;</button>`}</div></div></section>`,
+contact:()=>`${hdr('Contact Trading Desk','Initiate Engagement')}<section class="alt"><div class="w g g2"><div><p style="font-size:18px;color:var(--mut)">For RFQs, allocation inquiries, or partnership discussions, complete the form or contact our offices directly.</p><div class="ci"><i>&#9906;</i><div><b>Headquarters</b><br>${C.hq}</div></div><div class="ci"><i>&#9679;</i><div><b>Trading Hub</b><br>${C.exp}</div></div><div class="ci"><i>&#9993;</i><div><b>Commercial Inquiries</b><br>${C.email}<br>${C.phone}</div></div></div>
+<form class="card" id="f" novalidate>${flash?`<div class="msg ${flash[0]}">${flash[1]}</div>`:''}<div class="fr"><div><label>Full Name *</label><input name="name"></div><div><label>Company</label><input name="company"></div></div><div class="fr one"><div><label>Corporate Email *</label><input type="email" name="email"></div></div><div class="fr"><div><label>Product of Interest *</label><select name="product"><option value="">Select a product</option>${P.map(p=>`<option${p.name===pre?' selected':''}>${p.name}</option>`).join('')}</select></div><div><label>Indicative Volume (MT)</label><input name="volume" placeholder="e.g. 50,000 MT"></div></div><div class="fr one"><div><label>Destination Port</label><input name="port"></div></div><div class="fr one"><div><label>Additional Requirements</label><textarea name="message" rows="4"></textarea></div></div><button class="btn" style="width:100%" type="submit">Submit Inquiry</button></form></div></section>`
+};
+
+function go(h){location.hash=h;}
+function render(){
+  const h=(location.hash||'#home').slice(1),[pg,arg]=h.split('/');
+  const cur=pg==='product'?'products':pg;
+  $('#links').innerHTML=NAV.map(n=>`<button class="${n[0]===cur?'on':''}" onclick="go('${n[0]}')">${n[1]}</button>`).join('')+`<button class="btn sm" style="color:#fff;font-size:13px" onclick="go('contact')">Request Quote</button>`;
+  $('#links').classList.remove('open');
+  $('#app').innerHTML=`<div class="page">${(pages[pg]||pages.home)(arg)}</div>`;
+  const f=$('#f');
+  if(f)f.onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));
+    if(!d.name.trim()||!/^\S+@\S+\.\S+$/.test(d.email)||!d.product){flash=['e','Please complete the required fields (*) with a valid email.'];}
+    else{flash=['k','Inquiry submitted. Our commercial team will contact you shortly.'];pre='';}
+    render();};
+}
+window.addEventListener('hashchange',()=>{flash=null;window.scrollTo(0,0);render();});
+$('#fdesc').textContent=C.tag+'. '+C.desc;
+$('#fl').innerHTML=['about','products','operations','leadership'].map(x=>`<button onclick="go('${x}')">${x[0].toUpperCase()+x.slice(1)}</button>`).join('');
+$('#fc').innerHTML=`<p>${C.phone}<br>${C.email}<br>${C.hq} | ${C.exp}</p>`;
+$('#yr').textContent=new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
